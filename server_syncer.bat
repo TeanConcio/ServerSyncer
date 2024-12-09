@@ -48,7 +48,7 @@ exit /b
 :check_files
 :: Check if required files exist
 if not exist %username_file% (
-    echo Error: %username_file% not found.
+    echo Error: %username_file% not found. Please make one that contains the username of the user.
     exit /b 1
 )
 if not exist %status_file% (
@@ -71,7 +71,7 @@ for /f "usebackq tokens=*" %%A in ("%username_file%") do (
 )
 :DONE
 if "%USERNAME%"=="" (
-    echo Error: %username_file% is empty.
+    echo Error: %username_file% is empty. It must contain the username of the user.
     exit /b 1
 )
 goto :eof
@@ -187,8 +187,14 @@ goto :eof
 :commit_files
 :: Helper function to commit files with a commit message as a parameter
 set commit_message=%~1
-git add %status_file%
-git commit -m "%commit_message%"
+git add %status_file% || (
+    echo Error: Failed to add %status_file% to commit.
+    exit /b 1
+)
+git commit -m "%commit_message%" || (
+    echo Error: Failed to commit changes.
+    exit /b 1
+)
 git push origin %WORKING_BRANCH% || (
     echo Error: Failed to push changes to branch %WORKING_BRANCH%.
     exit /b 1
