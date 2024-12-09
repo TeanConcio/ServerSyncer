@@ -60,18 +60,18 @@ goto :eof
 
 :read_username
 :: Read the username from the file
-if exist %username_file% (
-    set /p USERNAME=<%username_file%
-    :: Remove any potential trailing spaces
-    set USERNAME=%USERNAME:~0,-1%
-    if "%USERNAME%"=="" (
-        echo Error: %username_file% is empty.
-        pause
-        exit /b 1
+for /f "usebackq tokens=*" %%A in ("%username_file%") do (
+    set /a CURRLINE+=1
+    if !CURRLINE! EQU 1 (
+        set "USERNAME=%%A"
+        :: Remove starting and trailing spaces
+        call :trim USERNAME
+        goto :DONE
     )
-) else (
-    echo Error: %username_file% not found.
-    pause
+)
+:DONE
+if "%USERNAME%"=="" (
+    echo Error: %username_file% is empty.
     exit /b 1
 )
 goto :eof
@@ -155,6 +155,15 @@ for /f "tokens=1-5 delims=/: " %%d in ("%date% %time%") do (
 goto :eof
 
 
+:trim
+:: Function to trim spaces
+set "var=!%1!"
+for /f "tokens=* delims= " %%a in ("!var!") do set "var=%%a"
+for /l %%a in (1,1,31) do if "!var:~-1!"==" " set "var=!var:~0,-1!"
+endlocal & set "%1=%var%"
+goto :eof
+
+
 :update_status_file
 :: Helper function to create a status file with the the variables
 set status=%~1
@@ -169,7 +178,7 @@ goto :eof
 
 :commit_files
 :: Helper function to commit files with a commit message as a parameter
-set "commit_message=%~1"
+set commit_message=%~1
 git add %status_file%
 git commit -m "%commit_message%"
 git push origin %WORKING_BRANCH% || (
