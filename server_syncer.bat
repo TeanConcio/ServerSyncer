@@ -172,7 +172,11 @@ goto :eof
 :: Helper function to create a status file with the the variables
 set status=%~1
 (echo STATUS=%status%) > %status_file%
-(echo CURRENT_HOST=) >> %status_file%
+if "%status%" == "online" (
+    (echo CURRENT_HOST=%USERNAME%) >> %status_file%
+) else (
+    (echo CURRENT_HOST=) >> %status_file%
+)
 (echo.) >> %status_file%
 (echo SERVER_FOLDER=%SERVER_FOLDER%) >> %status_file%
 (echo SERVER_RUN_FILE=%SERVER_RUN_FILE%) >> %status_file%
