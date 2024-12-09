@@ -17,6 +17,7 @@ set WORKING_BRANCH=main
 
 :: Define function return variables
 set timestamp=
+set status=
 set commit_message=
 set start_timestamp=
 set stop_timestamp=
@@ -59,7 +60,16 @@ goto :eof
 
 :read_username
 :: Read the username from the file
-set /p USERNAME=<%username_file%
+if exist %username_file% (
+    set /p USERNAME=<%username_file%
+    if "%USERNAME%"=="" (
+        echo Error: %username_file% is empty.
+        exit /b 1
+    )
+) else (
+    echo Error: %username_file% not found.
+    exit /b 1
+)
 goto :eof
 
 
@@ -97,10 +107,7 @@ goto :eof
 call :get_timestamp
 set start_timestamp=%timestamp%
 :: Set the flag to online
-(echo STATUS=online) > %status_file%
-(echo CURRENT_HOST=%USERNAME%) >> %status_file%
-(echo SERVER_FOLDER=%SERVER_FOLDER%) >> %status_file%
-(echo SERVER_RUN_FILE=%SERVER_RUN_FILE%) >> %status_file%
+call :update_status_file "online"
 call :commit_files "Server started by %USERNAME% on %start_timestamp%"
 goto :eof
 
@@ -124,10 +131,7 @@ goto :eof
 call :get_timestamp
 set stop_timestamp=%timestamp%
 :: After server stops, set the flag to offline
-(echo STATUS=offline) > %status_file%
-(echo CURRENT_HOST=) >> %status_file%
-(echo SERVER_FOLDER=%SERVER_FOLDER%) >> %status_file%
-(echo SERVER_RUN_FILE=%SERVER_RUN_FILE%) >> %status_file%
+call :update_status_file "offline"
 call :commit_files "Server stopped by %USERNAME% on %stop_timestamp%"
 goto :eof
 
@@ -141,6 +145,18 @@ goto :eof
 for /f "tokens=1-5 delims=/: " %%d in ("%date% %time%") do (
     set timestamp=%%d-%%e-%%f %%g:%%h
 )
+goto :eof
+
+
+:update_status_file
+:: Helper function to create a status file with the the variables
+set status=%~1
+(echo STATUS=%status%) > %status_file%
+(echo CURRENT_HOST=) >> %status_file%
+(echo.) >> %status_file%
+(echo SERVER_FOLDER=%SERVER_FOLDER%) >> %status_file%
+(echo SERVER_RUN_FILE=%SERVER_RUN_FILE%) >> %status_file%
+(echo WORKING_BRANCH=%WORKING_BRANCH%) >> %status_file%
 goto :eof
 
 
