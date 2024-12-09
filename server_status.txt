@@ -1,4 +1,4 @@
-STATUS=offline
+STATUS=online
 CURRENT_HOST=
 
 SERVER_FOLDER=server_files
