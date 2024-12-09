@@ -90,8 +90,8 @@ goto :eof
 
 :pull_changes
 :: Pull the latest changes
-echo Updating server to latest changes from %WORKING_BRANCH% branch...
 for /f "tokens=2 delims==" %%A in ('findstr "WORKING_BRANCH=" %status_file%') do set WORKING_BRANCH=%%A
+echo Updating server to latest changes from %WORKING_BRANCH% branch...
 git pull origin %WORKING_BRANCH% || (
     echo Error: Failed to pull latest changes from branch %WORKING_BRANCH%.
     exit /b 1
