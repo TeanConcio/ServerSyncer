@@ -25,14 +25,14 @@ set stop_timestamp=
 
 
 :: Main Script
-call :check_files
-call :read_username
-call :pull_changes
-call :get_variables
-call :check_status
-call :set_status_online
-call :start_server
-call :set_status_offline
+call :check_files || exit /b 1
+call :read_username || exit /b 1
+call :pull_changes || exit /b 1
+call :get_variables || exit /b 1
+call :check_status || exit /b 1
+call :set_status_online || exit /b 1
+call :start_server || exit /b 1
+call :set_status_offline || exit /b 1
 
 endlocal
 exit /b
@@ -108,7 +108,7 @@ call :get_timestamp
 set start_timestamp=%timestamp%
 :: Set the flag to online
 call :update_status_file "online"
-call :commit_files "Server started by %USERNAME% on %start_timestamp%"
+call :commit_files "Server started by %USERNAME% on %start_timestamp%" || exit /b 1
 goto :eof
 
 
@@ -132,7 +132,7 @@ call :get_timestamp
 set stop_timestamp=%timestamp%
 :: After server stops, set the flag to offline
 call :update_status_file "offline"
-call :commit_files "Server stopped by %USERNAME% on %stop_timestamp%"
+call :commit_files "Server stopped by %USERNAME% on %stop_timestamp%" || exit /b 1
 goto :eof
 
 
