@@ -1,6 +1,4 @@
-STATUS=offline
+STATUS=online
 CURRENT_HOST=
-
 SERVER_FOLDER=server_files
 SERVER_RUN_FILE=run.bat
-WORKING_BRANCH=testing
