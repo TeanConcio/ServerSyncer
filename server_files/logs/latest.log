@@ -1,0 +1,250 @@
+[19:59:53] [main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.9
+[19:59:53] [main/INFO]: Loading 100 mods:
+	- c2me 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-base 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-client-uncapvd 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-fixes-chunkio-threading-issues 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-fixes-general-threading-issues 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-fixes-worldgen-threading-issues 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-fixes-worldgen-vanilla-bugs 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-notickvd 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-allocs 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-chunk-access 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-chunkio 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-dfc 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-math 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-scheduling 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-worldgen-general 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-opts-worldgen-vanilla 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-rewrites-chunk-serializer 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-rewrites-chunk-system 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-rewrites-chunkio 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-server-utils 0.3.0+alpha.0.295+1.21.1
+	   |-- c2me-threading-lighting 0.3.0+alpha.0.295+1.21.1
+	   |-- com_electronwill_night-config_core 3.6.5
+	   |-- com_electronwill_night-config_toml 3.6.5
+	   |-- com_ibm_async_asyncutil 0.1.0
+	   |-- io_reactivex_rxjava3_rxjava 3.1.8
+	   |-- mixinsquared 0.2.0-beta.6
+	   |-- net_objecthunter_exp4j 0.4.8
+	   |-- org_jctools_jctools-core 4.0.5
+	   \-- org_reactivestreams_reactive-streams 1.0.4
+	- cloth-config 15.0.140
+	   \-- cloth-basic-math 0.6.1
+	- easyauth 3.0.25
+	   |-- at_favre_lib_bcrypt 0.10.2
+	   |-- at_favre_lib_bytes 1.6.1
+	   |-- com_mysql_mysql-connector-j 8.2.0
+	   |-- com_typesafe_config 1.4.3
+	   |-- de_mkammerer_argon2-jvm 2.11
+	   |-- de_mkammerer_argon2-jvm-nolibs 2.11
+	   |-- fabric-permissions-api-v0 0.3.1
+	   |-- io_leangen_geantyref_geantyref 1.3.13
+	   |-- net_java_dev_jna_jna 5.13.0
+	   |-- org_apache_commons_commons-text 1.10.0
+	   |-- org_iq80_leveldb_leveldb 0.12
+	   |-- org_iq80_leveldb_leveldb-api 0.12
+	   |-- org_mongodb_bson 4.11.1
+	   |-- org_mongodb_mongodb-driver-core 4.11.1
+	   |-- org_mongodb_mongodb-driver-sync 4.11.1
+	   |-- org_spongepowered_configurate-core 4.1.2
+	   |-- org_spongepowered_configurate-hocon 4.1.2
+	   \-- server_translations_api 2.3.1+1.21-pre2
+	        \-- packet_tweaker 0.5.1+24w03b
+	- entityculling 1.7.1
+	- fabric-api 0.107.0+1.21.1
+	   |-- fabric-api-base 0.4.42+6573ed8c19
+	   |-- fabric-api-lookup-api-v1 1.6.69+b559734419
+	   |-- fabric-biome-api-v1 13.0.30+be1ed2d719
+	   |-- fabric-block-api-v1 1.0.22+0af3f5a719
+	   |-- fabric-block-view-api-v2 1.0.10+6573ed8c19
+	   |-- fabric-blockrenderlayer-v1 1.1.52+0af3f5a719
+	   |-- fabric-client-tags-api-v1 1.1.15+6573ed8c19
+	   |-- fabric-command-api-v1 1.2.49+f71b366f19
+	   |-- fabric-command-api-v2 2.2.28+6ced4dd919
+	   |-- fabric-commands-v0 0.2.66+df3654b319
+	   |-- fabric-content-registries-v0 8.0.17+b559734419
+	   |-- fabric-convention-tags-v1 2.1.1+7f945d5b19
+	   |-- fabric-convention-tags-v2 2.9.1+7fd4837519
+	   |-- fabric-crash-report-info-v1 0.2.29+0af3f5a719
+	   |-- fabric-data-attachment-api-v1 1.2.0+e49211d819
+	   |-- fabric-data-generation-api-v1 20.2.22+16c4ae2519
+	   |-- fabric-dimensions-v1 4.0.0+6fc22b9919
+	   |-- fabric-entity-events-v1 1.7.0+2122d82819
+	   |-- fabric-events-interaction-v0 0.7.13+ba9dae0619
+	   |-- fabric-game-rule-api-v1 1.0.53+6ced4dd919
+	   |-- fabric-item-api-v1 11.1.1+d5debaed19
+	   |-- fabric-item-group-api-v1 4.1.6+6823f7cd19
+	   |-- fabric-key-binding-api-v1 1.0.47+0af3f5a719
+	   |-- fabric-keybindings-v0 0.2.45+df3654b319
+	   |-- fabric-lifecycle-events-v1 2.4.0+0f6c53cd19
+	   |-- fabric-loot-api-v2 3.0.15+3f89f5a519
+	   |-- fabric-loot-api-v3 1.0.3+3f89f5a519
+	   |-- fabric-message-api-v1 6.0.13+6573ed8c19
+	   |-- fabric-model-loading-api-v1 2.0.0+fe474d6b19
+	   |-- fabric-networking-api-v1 4.3.0+c7469b2119
+	   |-- fabric-object-builder-api-v1 15.2.1+40875a9319
+	   |-- fabric-particles-v1 4.0.2+6573ed8c19
+	   |-- fabric-recipe-api-v1 5.0.13+6508971219
+	   |-- fabric-registry-sync-v0 5.1.3+60c3209b19
+	   |-- fabric-renderer-api-v1 3.4.0+c705a49c19
+	   |-- fabric-renderer-indigo 1.7.0+c705a49c19
+	   |-- fabric-renderer-registries-v1 3.2.68+df3654b319
+	   |-- fabric-rendering-data-attachment-v1 0.3.48+73761d2e19
+	   |-- fabric-rendering-fluids-v1 3.1.6+1daea21519
+	   |-- fabric-rendering-v0 1.1.71+df3654b319
+	   |-- fabric-rendering-v1 5.0.5+df16efd019
+	   |-- fabric-resource-conditions-api-v1 4.3.0+8dc279b119
+	   |-- fabric-resource-loader-v0 1.3.1+5b5275af19
+	   |-- fabric-screen-api-v1 2.0.25+8b68f1c719
+	   |-- fabric-screen-handler-api-v1 1.3.87+b559734419
+	   |-- fabric-sound-api-v1 1.0.23+6573ed8c19
+	   |-- fabric-transfer-api-v1 5.4.1+95bead5f19
+	   \-- fabric-transitive-access-wideners-v1 6.1.0+1daea21519
+	- fabricloader 0.16.9
+	   \-- mixinextras 0.4.1
+	- ferritecore 7.0.2-hotfix
+	- java 21
+	- lithium 0.14.0-snapshot+mc1.21.1-build.88
+	- minecraft 1.21.1
+	- modernfix 5.19.5+mc1.21.1
+	- nochatreports 1.21.1-v2.9.0
+	- noisium 2.3.0+mc1.21-1.21.1
+	- skinrestorer 2.1.0+1.21-fabric
+	- threadtweak 0.1.5+mc1.21.1
+	- vmp 0.2.0+beta.7.169+1.21.1
+	   \-- com_ibm_async_asyncutil 0.1.0
+[19:59:54] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Tean%20Concio/Documents/Game%20Data/Minecraft%20Servers/Optimized%20Fabric%201.21.1/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[19:59:55] [main/INFO]: Compatibility level set to JAVA_16
+[19:59:55] [main/INFO]: Compatibility level set to JAVA_21
+[19:59:55] [main/INFO]: Initializing com.ishland.c2me.base.mixin
+[19:59:56] [main/INFO]: Updating config from 0 to 1
+[19:59:56] [main/INFO]: Updating config from 1 to 2
+[19:59:56] [main/INFO]: Updating config from 2 to 3
+[19:59:56] [main/INFO]: Global Executor Parallelism: 5 configured, 5 evaluated, 5 default evaluated
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.chunk_access.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.dfc.mixin
+[19:59:56] [main/INFO]: Disabling com.ishland.c2me.opts.dfc.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
+[19:59:56] [main/INFO]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
+[19:59:56] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
+[19:59:56] [main/INFO]: Loaded configuration file for Lithium: 145 options available, 2 override(s) found
+[19:59:56] [main/INFO]: Loaded configuration file for Lithium: 145 options available, 2 override(s) found
+[19:59:56] [main/INFO]: Loaded configuration file for ModernFix 5.19.5+mc1.21.1: 54 options available, 5 override(s) found
+[19:59:56] [main/WARN]: Option 'mixin.bugfix.paper_chunk_patches' overriden (by mods [c2me]) to 'false'
+[19:59:56] [main/WARN]: Option 'mixin.perf.cache_strongholds' overriden (by mods [c2me]) to 'false'
+[19:59:56] [main/WARN]: Option 'mixin.perf.nbt_memory_usage' overriden (by mods [c2me]) to 'false'
+[19:59:56] [main/WARN]: Option 'mixin.bugfix.chunk_deadlock' overriden (by mods [c2me]) to 'false'
+[19:59:56] [main/WARN]: Option 'mixin.perf.thread_priorities' overriden (by mods [threadtweak]) to 'false'
+[19:59:56] [main/INFO]: Applying Nashorn fix
+[19:59:56] [main/INFO]: Successfully started async appender with [ServerGuiConsole, SysOut, File]
+[19:59:56] [main/WARN]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca/spottedleaf/starlight/common/thread/SchedulingUtil)
+[19:59:56] [main/WARN]: Force-disabling mixin 'alloc.blockstate.StateHolderMixin' as rule 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children
+[19:59:57] [main/WARN]: Force-enabling mixin 'compat.transfer_api.TransferApiHelperMixin' as rule 'mixin.compat.transfer_api' (added by mods [lithium]) enables it
+[19:59:57] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[19:59:57] [main/INFO]: ThreadTweak config initialized
+[20:00:01] [main/INFO]: Injecting BlockStateBase cache population hook into lithium$getAllFlags from net.caffeinemc.mods.lithium.mixin.util.block_tracking.BlockStateBaseMixin
+[20:00:01] [main/WARN]: Method overwrite conflict for method_21740 in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin from mod modernfix, previously written by net.caffeinemc.mods.lithium.mixin.world.temperature_cache.BiomeMixin. Skipping method.
+[20:00:04] [main/INFO]: Vanilla bootstrap took 5076 milliseconds
+[20:00:04] [main/INFO]: [EasyAuth]: EasyAuth mod by NikitaCartes
+[20:00:04] [main/WARN]: [EasyAuth]: Disable enforce-secure-profile to allow offline players to join the server
+[20:00:04] [main/WARN]: [EasyAuth]: For more info, see https://github.com/NikitaCartes/EasyAuth/issues/68
+[20:00:05] [main/INFO]: Loading Noisium.
+[20:00:05] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:00:06] [main/INFO]: Found new data pack easyauth, loading it automatically
+[20:00:06] [main/INFO]: Found new data pack fabric, loading it automatically
+[20:00:06] [main/INFO]: Found new data pack fabric-convention-tags-v2, loading it automatically
+[20:00:06] [main/INFO]: Found new data pack server_translations_api, loading it automatically
+[20:00:06] [main/INFO]: No existing world data, creating new world
+[20:00:07] [main/INFO]: Loaded 1290 recipes
+[20:00:08] [main/INFO]: Loaded 1399 advancements
+[20:00:08] [ForkJoinPool.commonPool-worker-1/INFO]: Loaded 36 translation keys
+[20:00:08] [main/INFO]: Applied 0 biome modifications to 0 of 64 new biomes in 3.031 ms
+[20:00:08] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[20:00:08] [Server thread/INFO]: Loading properties
+[20:00:08] [Server thread/INFO]: Default game type: SURVIVAL
+[20:00:08] [Server thread/INFO]: Generating keypair
+[20:00:08] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:00:08] [Server thread/INFO]: Using default channel type
+[20:00:08] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:00:08] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:00:08] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:00:08] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:00:08] [Server thread/INFO]: Preparing level "world"
+[20:00:08] [Server thread/INFO]: Enforcing safe world random access
+[20:00:09] [Server thread/INFO]: Changing watch distance to 10
+[20:00:09] [Server thread/INFO]: Using TheSpeedyObjectFactory with Unsafe
+[20:00:14] [Server thread/INFO]: Changing watch distance to 10
+[20:00:14] [Server thread/INFO]: Changing watch distance to 10
+[20:00:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:00:14] [c2me-worker-2/INFO]: Preparing spawn area: 2%
+[20:00:15] [c2me-worker-0/INFO]: Preparing spawn area: 2%
+[20:00:15] [c2me-worker-4/INFO]: Preparing spawn area: 2%
+[20:00:16] [c2me-worker-1/INFO]: Preparing spawn area: 2%
+[20:00:16] [c2me-worker-3/INFO]: Preparing spawn area: 8%
+[20:00:17] [c2me-worker-3/INFO]: Preparing spawn area: 51%
+[20:00:17] [c2me-worker-2/INFO]: Preparing spawn area: 61%
+[20:00:18] [c2me-worker-3/INFO]: Preparing spawn area: 73%
+[20:00:18] [Server thread/INFO]: Time elapsed: 3842 ms
+[20:00:18] [Server thread/INFO]: Done (9.650s)! For help, type "help"
+[20:00:18] [Server thread/WARN]: Dedicated server took 26.174 seconds to load
+[20:02:21] [Server thread/INFO]: CovalentContras[/127.0.0.1:60960] logged in with entity id 5 at (326.5, 70.0, -269.5)
+[20:02:21] [Server thread/INFO]: CovalentContras joined the game
+[20:03:01] [Server thread/INFO]: Made CovalentContras a server operator
+[20:03:08] [Server thread/INFO]: [CovalentContras: Set own game mode to Creative Mode]
+[20:03:20] [Server thread/INFO]: CovalentContras lost connection: Disconnected
+[20:03:20] [Server thread/INFO]: CovalentContras left the game
+[20:03:23] [Server thread/INFO]: CovalentContras[/127.0.0.1:60987] logged in with entity id 605 at (324.29795343282393, 70.0, -281.4016612697377)
+[20:03:23] [Server thread/INFO]: CovalentContras joined the game
+[20:03:53] [Server thread/INFO]: CovalentContras lost connection: Disconnected
+[20:03:53] [Server thread/INFO]: CovalentContras left the game
+[20:06:25] [Server thread/INFO]: CovalentContras[/127.0.0.1:61087] logged in with entity id 786 at (316.703149384937, 70.0, -282.36867882380903)
+[20:06:25] [Server thread/INFO]: CovalentContras joined the game
+[20:07:15] [Server thread/INFO]: CovalentContras lost connection: Disconnected
+[20:07:15] [Server thread/INFO]: CovalentContras left the game
+[20:08:21] [Server thread/INFO]: Test[/127.0.0.1:61121] logged in with entity id 966 at (344.5, 72.0, -273.5)
+[20:08:21] [Server thread/INFO]: Test joined the game
+[20:08:57] [Server thread/INFO]: [Test: Skin changed]
+[20:09:36] [Server thread/INFO]: Test lost connection: Disconnected
+[20:09:36] [Server thread/INFO]: Test left the game
+[20:09:51] [Server thread/INFO]: Unknown or incomplete command, see below for error
+[20:09:51] [Server thread/INFO]: save<--[HERE]
+[20:09:54] [Server thread/INFO]: Unknown or incomplete command, see below for error
+[20:09:54] [Server thread/INFO]: save<--[HERE]
+[20:10:02] [Server thread/INFO]: Stopping the server
+[20:10:02] [Server thread/INFO]: Stopping server
+[20:10:02] [Server thread/INFO]: Saving players
+[20:10:02] [Server thread/INFO]: Saving worlds
+[20:10:02] [Server thread/INFO]: ServerLevel[world]/minecraft:overworld: waiting for 841 chunks to unload
+[20:10:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[20:10:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[20:10:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[20:10:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[20:10:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20:10:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20:10:02] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20:10:02] [C2ME Storage #3/INFO]: Storage thread Thread[#103,C2ME Storage #3,8,main] stopped
+[20:10:02] [C2ME Storage #2/INFO]: Storage thread Thread[#102,C2ME Storage #2,8,main] stopped
+[20:10:02] [C2ME Storage #1/INFO]: Storage thread Thread[#101,C2ME Storage #1,8,main] stopped
+[20:10:02] [C2ME Storage #6/INFO]: Storage thread Thread[#109,C2ME Storage #6,8,main] stopped
+[20:10:02] [C2ME Storage #5/INFO]: Storage thread Thread[#108,C2ME Storage #5,8,main] stopped
+[20:10:02] [C2ME Storage #4/INFO]: Storage thread Thread[#107,C2ME Storage #4,8,main] stopped
+[20:10:02] [C2ME Storage #9/INFO]: Storage thread Thread[#113,C2ME Storage #9,8,main] stopped
+[20:10:02] [C2ME Storage #8/INFO]: Storage thread Thread[#112,C2ME Storage #8,8,main] stopped
+[20:10:02] [C2ME Storage #7/INFO]: Storage thread Thread[#111,C2ME Storage #7,8,main] stopped
+[20:10:02] [Server thread/INFO]: [EasyAuth]: Shutting down EasyAuth.
+[20:10:02] [Server thread/INFO]: [EasyAuth]: Database connection closed successfully
