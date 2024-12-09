@@ -25,14 +25,14 @@ set stop_timestamp=
 
 
 :: Main Script
-call :check_files || exit /b 1
-call :read_username || exit /b 1
-call :pull_changes || exit /b 1
-call :get_variables || exit /b 1
-call :check_status || exit /b 1
-call :set_status_online || exit /b 1
-call :start_server || exit /b 1
-call :set_status_offline || exit /b 1
+call :check_files || pause && exit /b 1
+call :read_username || pause && exit /b 1
+call :pull_changes || pause && exit /b 1
+call :get_variables || pause && exit /b 1
+call :check_status || pause && exit /b 1
+call :set_status_online || pause && exit /b 1
+call :start_server || pause && exit /b 1
+call :set_status_offline || pause && exit /b 1
 
 endlocal
 exit /b
