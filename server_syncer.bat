@@ -118,7 +118,10 @@ cd %SERVER_FOLDER% || (
     echo Error: Failed to navigate to %SERVER_FOLDER% directory.
     exit /b 1
 )
-call %SERVER_RUN_FILE%
+call %SERVER_RUN_FILE% || (
+    echo Error: Failed to start the server.
+    exit /b 1
+)
 cd .. || (
     echo Error: Failed to navigate back to original directory.
     exit /b 1
