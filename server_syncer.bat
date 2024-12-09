@@ -62,12 +62,16 @@ goto :eof
 :: Read the username from the file
 if exist %username_file% (
     set /p USERNAME=<%username_file%
+    :: Remove any potential trailing spaces
+    set USERNAME=%USERNAME:~0,-1%
     if "%USERNAME%"=="" (
         echo Error: %username_file% is empty.
+        pause
         exit /b 1
     )
 ) else (
     echo Error: %username_file% not found.
+    pause
     exit /b 1
 )
 goto :eof
