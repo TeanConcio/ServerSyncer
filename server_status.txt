@@ -2,5 +2,5 @@ STATUS=offline
 CURRENT_HOST=
 
 SERVER_FOLDER=server_files
-SERVER_RUN_FILE=run.bat
+SERVER_RUN_FILE=start.bat
 WORKING_BRANCH=testing
