@@ -1,0 +1,2 @@
+STATUS=offline
+CURRENT_HOST=
