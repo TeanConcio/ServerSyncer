@@ -137,8 +137,12 @@ goto :eof
 :: Get current timestamp for stop event
 call :get_timestamp
 set stop_timestamp=%timestamp%
-:: After server stops, set the flag to offline
+:: After server stops, set the flag to offline and commit the changes
 call :update_status_file "offline"
+git add %SERVER_FOLDER% || (
+    echo Error: Failed to add files to commit.
+    exit /b 1
+)
 call :commit_files "Server stopped by %USERNAME% on %stop_timestamp%" || exit /b 1
 goto :eof
 
