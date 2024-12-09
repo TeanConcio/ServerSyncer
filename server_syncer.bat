@@ -13,6 +13,7 @@ set STATUS=
 set CURRENT_HOST=
 set SERVER_FOLDER=server_files
 set SERVER_RUN_FILE=run.bat
+set WORKING_BRANCH=main
 
 :: Define function return variables
 set timestamp=
@@ -64,8 +65,9 @@ goto :eof
 
 :pull_changes
 :: Pull the latest changes from GitHub
-git pull origin main || (
-    echo Error: Failed to pull latest changes from GitHub.
+for /f "tokens=2 delims==" %%A in ('findstr "WORKING_BRANCH=" %status_file%') do set WORKING_BRANCH=%%A
+git pull origin %WORKING_BRANCH% || (
+    echo Error: Failed to pull latest changes from branch %WORKING_BRANCH%.
     exit /b 1
 )
 goto :eof
@@ -77,6 +79,7 @@ for /f "tokens=2 delims==" %%A in ('findstr "STATUS=" %status_file%') do set STA
 for /f "tokens=2 delims==" %%B in ('findstr "CURRENT_HOST=" %status_file%') do set CURRENT_HOST=%%B
 for /f "tokens=2 delims==" %%C in ('findstr "SERVER_FOLDER=" %status_file%') do set SERVER_FOLDER=%%C
 for /f "tokens=2 delims==" %%D in ('findstr "SERVER_RUN_FILE=" %status_file%') do set SERVER_RUN_FILE=%%D
+for /f "tokens=2 delims==" %%E in ('findstr "WORKING_BRANCH=" %status_file%') do set WORKING_BRANCH=%%E
 goto :eof
 
 
@@ -146,8 +149,8 @@ goto :eof
 set "commit_message=%~1"
 git add %status_file%
 git commit -m "%commit_message%"
-git push origin main || (
-    echo Error: Failed to push changes to GitHub.
+git push origin %WORKING_BRANCH% || (
+    echo Error: Failed to push changes to branch %WORKING_BRANCH%.
     exit /b 1
 )
 goto :eof
