@@ -1,5 +1,5 @@
-STATUS=offline
-CURRENT_HOST=
+STATUS=online
+CURRENT_HOST=CovalentContras
 
 SERVER_FOLDER=server_files
 SERVER_RUN_FILE=start.bat
