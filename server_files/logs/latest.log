@@ -1,5 +1,5 @@
-[15:58:59] [main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.9
-[15:59:00] [main/INFO]: Loading 100 mods:
+[16:33:29] [main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.9
+[16:33:30] [main/INFO]: Loading 100 mods:
 	- c2me 0.3.0+alpha.0.295+1.21.1
 	   |-- c2me-base 0.3.0+alpha.0.295+1.21.1
 	   |-- c2me-client-uncapvd 0.3.0+alpha.0.295+1.21.1
@@ -114,126 +114,107 @@
 	- threadtweak 0.1.5+mc1.21.1
 	- vmp 0.2.0+beta.7.169+1.21.1
 	   \-- com_ibm_async_asyncutil 0.1.0
-[15:59:02] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Tean%20Concio/Documents/Game%20Data/Minecraft%20Servers/ServerSyncer/server_files/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[15:59:06] [main/INFO]: Compatibility level set to JAVA_16
-[15:59:06] [main/INFO]: Compatibility level set to JAVA_21
-[15:59:07] [main/INFO]: Initializing com.ishland.c2me.base.mixin
-[15:59:08] [main/INFO]: Global Executor Parallelism: 5 configured, 5 evaluated, 5 default evaluated
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.chunk_access.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.dfc.mixin
-[15:59:08] [main/INFO]: Disabling com.ishland.c2me.opts.dfc.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
-[15:59:08] [main/INFO]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
-[15:59:08] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
-[15:59:08] [main/INFO]: Loaded configuration file for Lithium: 145 options available, 2 override(s) found
-[15:59:08] [main/INFO]: Loaded configuration file for Lithium: 145 options available, 2 override(s) found
-[15:59:08] [main/INFO]: Loaded configuration file for ModernFix 5.19.5+mc1.21.1: 54 options available, 5 override(s) found
-[15:59:08] [main/WARN]: Option 'mixin.bugfix.paper_chunk_patches' overriden (by mods [c2me]) to 'false'
-[15:59:08] [main/WARN]: Option 'mixin.perf.cache_strongholds' overriden (by mods [c2me]) to 'false'
-[15:59:08] [main/WARN]: Option 'mixin.perf.nbt_memory_usage' overriden (by mods [c2me]) to 'false'
-[15:59:08] [main/WARN]: Option 'mixin.bugfix.chunk_deadlock' overriden (by mods [c2me]) to 'false'
-[15:59:08] [main/WARN]: Option 'mixin.perf.thread_priorities' overriden (by mods [threadtweak]) to 'false'
-[15:59:08] [main/INFO]: Applying Nashorn fix
-[15:59:09] [main/INFO]: Successfully started async appender with [ServerGuiConsole, SysOut, File]
-[15:59:09] [main/WARN]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca/spottedleaf/starlight/common/thread/SchedulingUtil)
-[15:59:09] [main/WARN]: Force-disabling mixin 'alloc.blockstate.StateHolderMixin' as rule 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children
-[15:59:10] [main/WARN]: Force-enabling mixin 'compat.transfer_api.TransferApiHelperMixin' as rule 'mixin.compat.transfer_api' (added by mods [lithium]) enables it
-[15:59:10] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[15:59:12] [main/INFO]: ThreadTweak config initialized
-[15:59:17] [main/INFO]: Injecting BlockStateBase cache population hook into lithium$getAllFlags from net.caffeinemc.mods.lithium.mixin.util.block_tracking.BlockStateBaseMixin
-[15:59:19] [main/WARN]: Method overwrite conflict for method_21740 in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin from mod modernfix, previously written by net.caffeinemc.mods.lithium.mixin.world.temperature_cache.BiomeMixin. Skipping method.
-[15:59:27] [main/INFO]: Vanilla bootstrap took 12002 milliseconds
-[15:59:27] [main/INFO]: [EasyAuth]: EasyAuth mod by NikitaCartes
-[15:59:27] [main/WARN]: [EasyAuth]: Disable enforce-secure-profile to allow offline players to join the server
-[15:59:27] [main/WARN]: [EasyAuth]: For more info, see https://github.com/NikitaCartes/EasyAuth/issues/68
-[15:59:28] [main/ERROR]: [EasyAuth]: onInitialize error: 
-xyz.nikitacartes.easyauth.storage.database.DBApiException: [EasyAuth] Failed setting up LevelDB
-	at knot//xyz.nikitacartes.easyauth.storage.database.LevelDB.connect(LevelDB.java:43)
-	at knot//xyz.nikitacartes.easyauth.EasyAuth.onInitialize(EasyAuth.java:100)
-	at net.fabricmc.loader.impl.FabricLoaderImpl.invokeEntrypoints(FabricLoaderImpl.java:399)
-	at net.fabricmc.loader.impl.game.minecraft.Hooks.startServer(Hooks.java:63)
-	at knot//net.minecraft.server.Main.main(Main.java:111)
-	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
-	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
-	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23)
-	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69)
-Caused by: java.io.FileNotFoundException: .\mods\SimpleAuth\levelDBStore\MANIFEST-000007 (The filename, directory name, or volume label syntax is incorrect)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-	at knot//org.iq80.leveldb.impl.VersionSet.recover(VersionSet.java:346)
-	at knot//org.iq80.leveldb.impl.DbImpl.<init>(DbImpl.java:183)
-	at knot//org.iq80.leveldb.impl.Iq80DBFactory.open(Iq80DBFactory.java:83)
-	at knot//xyz.nikitacartes.easyauth.storage.database.LevelDB.connect(LevelDB.java:41)
-	... 8 more
-
-[15:59:28] [main/INFO]: Loading Noisium.
-[15:59:30] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[15:59:36] [main/INFO]: Loaded 1290 recipes
-[15:59:37] [main/INFO]: Loaded 1399 advancements
-[15:59:37] [ForkJoinPool.commonPool-worker-1/INFO]: Loaded 36 translation keys
-[15:59:38] [main/INFO]: Applied 0 biome modifications to 0 of 64 new biomes in 5.291 ms
-[15:59:38] [Server thread/INFO]: Starting minecraft server version 1.21.1
-[15:59:38] [Server thread/INFO]: Loading properties
-[15:59:38] [Server thread/INFO]: Default game type: SURVIVAL
-[15:59:38] [Server thread/INFO]: Generating keypair
-[15:59:38] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:59:38] [Server thread/INFO]: Using default channel type
-[15:59:38] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[15:59:38] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[15:59:38] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[15:59:38] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[15:59:38] [Server thread/INFO]: Preparing level "world"
-[15:59:38] [Server thread/INFO]: Enforcing safe world random access
-[15:59:39] [Server thread/INFO]: Changing watch distance to 10
-[15:59:39] [Server thread/INFO]: Using TheSpeedyObjectFactory with Unsafe
-[15:59:41] [Server thread/INFO]: Changing watch distance to 10
-[15:59:41] [Server thread/INFO]: Changing watch distance to 10
-[15:59:41] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[15:59:42] [c2me-worker-3/INFO]: Preparing spawn area: 0%
-[15:59:42] [c2me-worker-0/INFO]: Preparing spawn area: 0%
-[15:59:42] [c2me-worker-4/INFO]: Preparing spawn area: 0%
-[15:59:42] [c2me-worker-3/INFO]: Preparing spawn area: 0%
-[15:59:43] [c2me-worker-1/INFO]: Preparing spawn area: 0%
-[15:59:43] [c2me-worker-3/INFO]: Preparing spawn area: 0%
-[15:59:44] [c2me-worker-0/INFO]: Preparing spawn area: 0%
-[15:59:44] [Server thread/INFO]: Preparing spawn area: 32%
-[15:59:45] [Server thread/INFO]: Time elapsed: 4329 ms
-[15:59:45] [Server thread/INFO]: Done (6.871s)! For help, type "help"
-[15:59:45] [Server thread/WARN]: Dedicated server took 53.311 seconds to load
-[15:59:45] [Server thread/ERROR]: [EasyAuth]: Couldn't connect to database. Stopping server
-[15:59:45] [Server thread/INFO]: Stopping server
-[15:59:45] [Server thread/INFO]: Saving players
-[15:59:45] [Server thread/INFO]: Saving worlds
-[15:59:45] [Server thread/INFO]: ServerLevel[world]/minecraft:overworld: waiting for 841 chunks to unload
-[15:59:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[15:59:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[15:59:46] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[15:59:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:59:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:59:46] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:59:46] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[15:59:46] [C2ME Storage #3/INFO]: Storage thread Thread[#103,C2ME Storage #3,8,main] stopped
-[15:59:46] [C2ME Storage #2/INFO]: Storage thread Thread[#102,C2ME Storage #2,8,main] stopped
-[15:59:46] [C2ME Storage #1/INFO]: Storage thread Thread[#101,C2ME Storage #1,8,main] stopped
-[15:59:46] [C2ME Storage #6/INFO]: Storage thread Thread[#108,C2ME Storage #6,8,main] stopped
-[15:59:46] [C2ME Storage #5/INFO]: Storage thread Thread[#107,C2ME Storage #5,8,main] stopped
-[15:59:46] [C2ME Storage #4/INFO]: Storage thread Thread[#106,C2ME Storage #4,8,main] stopped
-[15:59:46] [C2ME Storage #9/INFO]: Storage thread Thread[#112,C2ME Storage #9,8,main] stopped
-[15:59:46] [C2ME Storage #8/INFO]: Storage thread Thread[#111,C2ME Storage #8,8,main] stopped
-[15:59:46] [C2ME Storage #7/INFO]: Storage thread Thread[#110,C2ME Storage #7,8,main] stopped
-[15:59:46] [Server thread/INFO]: [EasyAuth]: Shutting down EasyAuth.
+[16:33:30] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Tean%20Concio/Documents/Game%20Data/Minecraft%20Servers/ServerSyncer/server_files/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[16:33:31] [main/INFO]: Compatibility level set to JAVA_16
+[16:33:31] [main/INFO]: Compatibility level set to JAVA_21
+[16:33:31] [main/INFO]: Initializing com.ishland.c2me.base.mixin
+[16:33:32] [main/INFO]: Global Executor Parallelism: 5 configured, 5 evaluated, 5 default evaluated
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.chunk_access.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.dfc.mixin
+[16:33:32] [main/INFO]: Disabling com.ishland.c2me.opts.dfc.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
+[16:33:32] [main/INFO]: Disabling com.ishland.c2me.rewrites.chunk_serializer.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
+[16:33:32] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
+[16:33:32] [main/INFO]: Loaded configuration file for Lithium: 145 options available, 2 override(s) found
+[16:33:32] [main/INFO]: Loaded configuration file for Lithium: 145 options available, 2 override(s) found
+[16:33:33] [main/INFO]: Loaded configuration file for ModernFix 5.19.5+mc1.21.1: 54 options available, 5 override(s) found
+[16:33:33] [main/WARN]: Option 'mixin.bugfix.paper_chunk_patches' overriden (by mods [c2me]) to 'false'
+[16:33:33] [main/WARN]: Option 'mixin.perf.cache_strongholds' overriden (by mods [c2me]) to 'false'
+[16:33:33] [main/WARN]: Option 'mixin.perf.nbt_memory_usage' overriden (by mods [c2me]) to 'false'
+[16:33:33] [main/WARN]: Option 'mixin.bugfix.chunk_deadlock' overriden (by mods [c2me]) to 'false'
+[16:33:33] [main/WARN]: Option 'mixin.perf.thread_priorities' overriden (by mods [threadtweak]) to 'false'
+[16:33:33] [main/INFO]: Applying Nashorn fix
+[16:33:33] [main/INFO]: Successfully started async appender with [ServerGuiConsole, SysOut, File]
+[16:33:33] [main/WARN]: Error loading class: ca/spottedleaf/starlight/common/thread/SchedulingUtil (java.lang.ClassNotFoundException: ca/spottedleaf/starlight/common/thread/SchedulingUtil)
+[16:33:33] [main/WARN]: Force-disabling mixin 'alloc.blockstate.StateHolderMixin' as rule 'mixin.alloc.blockstate' (added by mods [ferritecore]) disables it and children
+[16:33:34] [main/WARN]: Force-enabling mixin 'compat.transfer_api.TransferApiHelperMixin' as rule 'mixin.compat.transfer_api' (added by mods [lithium]) enables it
+[16:33:34] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[16:33:36] [main/INFO]: ThreadTweak config initialized
+[16:33:46] [main/INFO]: Injecting BlockStateBase cache population hook into lithium$getAllFlags from net.caffeinemc.mods.lithium.mixin.util.block_tracking.BlockStateBaseMixin
+[16:33:49] [main/WARN]: Method overwrite conflict for method_21740 in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin from mod modernfix, previously written by net.caffeinemc.mods.lithium.mixin.world.temperature_cache.BiomeMixin. Skipping method.
+[16:33:58] [main/INFO]: Vanilla bootstrap took 16499 milliseconds
+[16:33:58] [main/INFO]: [EasyAuth]: EasyAuth mod by NikitaCartes
+[16:33:58] [main/WARN]: [EasyAuth]: Disable enforce-secure-profile to allow offline players to join the server
+[16:33:58] [main/WARN]: [EasyAuth]: For more info, see https://github.com/NikitaCartes/EasyAuth/issues/68
+[16:34:00] [main/INFO]: Loading Noisium.
+[16:34:01] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:34:06] [main/INFO]: Loaded 1290 recipes
+[16:34:07] [main/INFO]: Loaded 1399 advancements
+[16:34:07] [ForkJoinPool.commonPool-worker-1/INFO]: Loaded 36 translation keys
+[16:34:08] [main/INFO]: Applied 0 biome modifications to 0 of 64 new biomes in 10.46 ms
+[16:34:08] [Server thread/INFO]: Starting minecraft server version 1.21.1
+[16:34:08] [Server thread/INFO]: Loading properties
+[16:34:08] [Server thread/INFO]: Default game type: SURVIVAL
+[16:34:08] [Server thread/INFO]: Generating keypair
+[16:34:08] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:34:08] [Server thread/INFO]: Using default channel type
+[16:34:08] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:34:08] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:34:08] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:34:08] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:34:08] [Server thread/INFO]: Preparing level "world"
+[16:34:09] [Server thread/INFO]: Enforcing safe world random access
+[16:34:10] [Server thread/INFO]: Changing watch distance to 10
+[16:34:10] [Server thread/INFO]: Using TheSpeedyObjectFactory with Unsafe
+[16:34:11] [Server thread/INFO]: Changing watch distance to 10
+[16:34:11] [Server thread/INFO]: Changing watch distance to 10
+[16:34:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:34:12] [c2me-worker-3/INFO]: Preparing spawn area: 0%
+[16:34:12] [c2me-worker-1/INFO]: Preparing spawn area: 0%
+[16:34:12] [c2me-worker-4/INFO]: Preparing spawn area: 0%
+[16:34:12] [c2me-worker-1/INFO]: Preparing spawn area: 0%
+[16:34:12] [c2me-worker-4/INFO]: Preparing spawn area: 0%
+[16:34:13] [minecraft_overworld - Light/INFO]: Preparing spawn area: 2%
+[16:34:13] [c2me-worker-3/INFO]: Preparing spawn area: 18%
+[16:34:13] [c2me-worker-2/INFO]: Preparing spawn area: 18%
+[16:34:14] [c2me-worker-2/INFO]: Preparing spawn area: 61%
+[16:34:14] [Server thread/INFO]: Time elapsed: 3380 ms
+[16:34:14] [Server thread/INFO]: Done (5.661s)! For help, type "help"
+[16:34:14] [Server thread/WARN]: Dedicated server took 48.072 seconds to load
+[16:34:30] [Server thread/INFO]: Stopping the server
+[16:34:30] [Server thread/INFO]: Stopping server
+[16:34:30] [Server thread/INFO]: Saving players
+[16:34:30] [Server thread/INFO]: Saving worlds
+[16:34:30] [Server thread/INFO]: ServerLevel[world]/minecraft:overworld: waiting for 841 chunks to unload
+[16:34:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:34:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[16:34:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[16:34:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:34:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:34:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:34:31] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:34:31] [C2ME Storage #3/INFO]: Storage thread Thread[#103,C2ME Storage #3,8,main] stopped
+[16:34:31] [C2ME Storage #2/INFO]: Storage thread Thread[#102,C2ME Storage #2,8,main] stopped
+[16:34:31] [C2ME Storage #1/INFO]: Storage thread Thread[#101,C2ME Storage #1,8,main] stopped
+[16:34:31] [C2ME Storage #6/INFO]: Storage thread Thread[#108,C2ME Storage #6,8,main] stopped
+[16:34:31] [C2ME Storage #5/INFO]: Storage thread Thread[#107,C2ME Storage #5,8,main] stopped
+[16:34:31] [C2ME Storage #4/INFO]: Storage thread Thread[#106,C2ME Storage #4,8,main] stopped
+[16:34:31] [C2ME Storage #9/INFO]: Storage thread Thread[#112,C2ME Storage #9,8,main] stopped
+[16:34:31] [C2ME Storage #8/INFO]: Storage thread Thread[#111,C2ME Storage #8,8,main] stopped
+[16:34:31] [C2ME Storage #7/INFO]: Storage thread Thread[#110,C2ME Storage #7,8,main] stopped
+[16:34:31] [Server thread/INFO]: [EasyAuth]: Shutting down EasyAuth.
+[16:34:31] [Server thread/INFO]: [EasyAuth]: Database connection closed successfully
